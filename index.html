@@ -48,7 +48,7 @@
     /></noscript>
     <!-- End Meta Pixel Code -->
   </head>
-  <body>
+  <body onLoad="setTimeout(carregar, 4000);">
     
     <header class="py-4">
       <div class="container">
@@ -2408,12 +2408,8 @@
     
     
     <script>
-$( document ).ready(function() {
-     setTimeout(carregar, 2000);
-});
-
 function carregar() {
-    $('#nww').show();
+    document.getElementById("nww").style.display="block";
 }
 </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
